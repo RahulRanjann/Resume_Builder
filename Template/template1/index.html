@@ -8,7 +8,8 @@
 </head>
 <body>
     <div class="backBtn">
-        <a href="/other.html" class="back-button">Back</a>
+        <a href="../other.html" class="back-button">Back</a>
+        <button id = "backBtn">Back</button>
     </div>
     
     <div class="resume" contenteditable="true">
@@ -52,7 +53,13 @@
     <div>
         <button id="downloadButton">Print Resume</button>
     </div>
-
+    
+    <script>
+         document.getElementById('backBtn').addEventListener('click', function() {
+            window.location.href = '../other.html'; // Adjust the path as needed
+        });
+    </script>
     <script src="script.js"></script>
 </body>
+
 </html>
