@@ -22,10 +22,11 @@ header {
     align-items: center;
 }
 
-#mission{
+#mission {
     text-align: center;
     margin: 0;
 }
+
 /* Navigation Bar Styles */
 header ul {
     list-style: none;
@@ -54,17 +55,19 @@ section {
     justify-content: center;
     align-items: center;
 }
+
+/* Home Section Styles */
 #home {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh; /* This ensures the section takes the full viewport height */
-    overflow: hidden; 
-  }
-  
-  /* Basic button styles */
-  .create-Btn {
+    overflow: hidden;
+}
+
+/* Basic button styles */
+.create-Btn {
     background-color: #0074D9; /* Blue background color */
     color: #fff; /* White text color */
     padding: 10px 20px; /* Padding for the button content */
@@ -72,16 +75,48 @@ section {
     border-radius: 10px; /* Rounded corners */
     cursor: pointer; /* Change cursor to pointer on hover */
     transition: background-color 0.3s ease; /* Smooth background color transition */
-  }
-  
-  /* Hover effect */
-  .create-Btn:hover {
+}
+
+/* Hover effect */
+.create-Btn:hover {
     background-color: #0056b3; /* Darker blue background color on hover */
-  }
-  
+}
+
 /* Resume Section Styles */
 #resume {
     background-color: #ffcc00;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.resume-template {
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 10px;
+    width: calc(33.33% - 20px); /* To create a three-column layout */
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.resume-template h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.resume-template p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.resume-template button {
+    background-color: #0074D9;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 14px;
 }
 
 /* Job Section Styles */

@@ -1,37 +1,44 @@
 /* Reset some default styles */
-body, h1, ul {
+body, h1, h2, h3, p, a, ul, li {
     margin: 0;
     padding: 0;
+    text-decoration: none;
+    color: #333;
 }
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+    background-color: #f5f5f5;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c2c2c2d2;
+    color: #000000;
     padding: 20px;
-    text-align: center;
+    border-bottom: 1px solid #333; /* Add a 1px border at the bottom */
 }
 
-h1 {
+.left-header {
+    flex: 1;
+}
+
+.left-header h1 {
     font-size: 24px;
 }
 
-ul.contact {
-    list-style: none;
-    padding: 0;
+.left-header p {
+    font-size: 16px;
+    margin: 5px 0;
 }
 
-ul.contact li {
-    margin-bottom: 10px;
-}
-
-ul.contact a {
-    text-decoration: none;
-    color: #fff;
+.right-header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #333; /* Add a 1px border around the photo */
 }
 
 main {
@@ -39,11 +46,38 @@ main {
     margin: 20px auto;
     background-color: #fff;
     padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px  #c2c2c2d2;
 }
 
 section {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
-/* Add more styles for different sections as needed */
+h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c2c2c2d2;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+a {
+    color: #0078d4;
+    text-decoration: none;
+}
+
+/* Add more styles for different sections and elements as needed */
