@@ -1,0 +1,95 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer; /* Make the header clickable */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mission{
+    text-align: center;
+    margin: 0;
+}
+/* Navigation Bar Styles */
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header ul li {
+    margin-right: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Section Styles */
+section {
+    height: calc(100vh - 40px); /* Adjust for header height */
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease; /* Smooth transition for background color */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* This ensures the section takes the full viewport height */
+    overflow: hidden; 
+  }
+  
+  /* Basic button styles */
+  .create-Btn {
+    background-color: #0074D9; /* Blue background color */
+    color: #fff; /* White text color */
+    padding: 10px 20px; /* Padding for the button content */
+    border: none; /* No border */
+    border-radius: 10px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+  }
+  
+  /* Hover effect */
+  .create-Btn:hover {
+    background-color: #0056b3; /* Darker blue background color on hover */
+  }
+  
+/* Resume Section Styles */
+#resume {
+    background-color: #ffcc00;
+}
+
+/* Job Section Styles */
+#job {
+    background-color: #66cc99;
+}
+
+/* About Us Section Styles */
+#about {
+    background-color: #3399ff;
+}
